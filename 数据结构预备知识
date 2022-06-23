@@ -1,0 +1,99 @@
+Python 
+Number数字---应用
+python支持的数据类型是int, float ,complex，Boolean:true,false
+
+list列表----应用
+a=[1,2,3,4,5]
+1.查找 a[0]:1 a[1]:2
+2.增加 ：a.append(6): a:[1,2,3,4,5,6]  append函数
+3.更新: a[0]=9. a:[9,2,3,4,5,6]
+4.删除:a.pop[0] a:[2,3,4,5,6]
+pop会返回一个删除的值
+a.pop():6
+a:[2,3,4,5]
+
+列表list与数组array的定义： 
+列表是由一系列按特定顺序排列的元素组成.
+1.可以将任何东西加入列表中
+2.其中的元素之间没有任何关系
+3.它可以方便、高效的的添加删除元素
+4.列表中的元素可以是多种类型。 
+数组也就是一个同一类型的数据的有限集合.
+
+常用函数: a :[2,3,4,5]   
+len(a):4  
+max(a):5
+min(a):2
+a.reverse()   a:[5,4,3,2]
+a.clear()     a:[]
+
+迭代list/遍历list   a:[1,2,3,4]  range(0,10) 0,1,2,3....9  range(10) 0,1,2,3,4,5,6,7,8,9
+1.for x in a:
+print(x)
+2.for index in range(len(a)):
+print(a[index])
+a[0]:1
+a[1]:2
+a[2]:3
+a[3]:4
+
+comprehension 高级操作---理解
+a:[1,2,3,4,5]
+[expression for element in iteration]
+
+b=[i*i for i in a]
+b=[1,4,9,16,25]
+b=[]
+for i in a:
+b[i]=i*i
+
+Tuple元组
+一组数据元素的集合：
+list:[1,1,5,"abc"]：增删改查
+Tuple:(1,1.5,"abc")：查 无法修改，增，删
+ Tuple a=(1,1.5,"abc")
+ 查： a[0]:1
+ a[1]:1.5
+ 
+一般是不需要做太多更改的数组元素，把它存在list里
+元组三个常用函数len,max,min
+len(a)=3
+max()
+min()
+ 
+ in  a=[1,2,3,4,5]  list
+     b=(1,2,3,4,5) tuple
+     
+     3 in a =>true
+     3 in b =>true
+     0 in a =>false
+     0 in b =>false
+     
+     in操作既可以用在list里面，也可以用在tuple里面
+     
+     slice切片  => list/tuple
+     a=[1,2,3,4,5] list
+     b=(1,2,3,4,5) tuple
+     a.[0:3]:0,1,2  [1,2,3]
+     b [0:3]:0,1,2
+     包括0，不包括3
+     
+     a[2,5]:[3,4,5]
+     b(2,5):(3,4,5)
+
+   
+     
+     
+     
+ 
+
+
+
+
+
+
+
+
+
+
+
